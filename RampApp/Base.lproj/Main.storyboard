@@ -21,12 +21,25 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZp-ZD-hBD">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsX-LT-ZZs">
+                                <rect key="frame" x="252" y="576" width="107" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="hxB-qZ-SNB"/>
+                                    <constraint firstAttribute="height" constant="71" id="qxP-Nn-cCd"/>
+                                </constraints>
+                                <state key="normal" image="rampIcon"/>
+                                <connections>
+                                    <action selector="onRampBtnPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="YNa-v8-c4N"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="OZp-ZD-hBD" firstAttribute="top" secondItem="x9n-Pk-hIp" secondAttribute="top" id="1Sk-Fc-YAN"/>
                             <constraint firstItem="OZp-ZD-hBD" firstAttribute="leading" secondItem="lfX-23-waV" secondAttribute="leading" id="6Z6-oK-87E"/>
+                            <constraint firstItem="lfX-23-waV" firstAttribute="bottom" secondItem="IsX-LT-ZZs" secondAttribute="bottom" constant="20" id="ihz-XN-pLn"/>
                             <constraint firstItem="OZp-ZD-hBD" firstAttribute="bottom" secondItem="lfX-23-waV" secondAttribute="bottom" id="sK8-7C-pYm"/>
+                            <constraint firstItem="lfX-23-waV" firstAttribute="trailing" secondItem="IsX-LT-ZZs" secondAttribute="trailing" constant="16" id="tkR-g9-1G0"/>
                             <constraint firstItem="OZp-ZD-hBD" firstAttribute="trailing" secondItem="lfX-23-waV" secondAttribute="trailing" id="y28-dh-OKy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lfX-23-waV"/>
@@ -40,4 +53,7 @@
             <point key="canvasLocation" x="32.799999999999997" y="31.934032983508249"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="rampIcon" width="107" height="71"/>
+    </resources>
 </document>
